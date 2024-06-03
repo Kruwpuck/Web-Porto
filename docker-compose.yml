@@ -1,0 +1,10 @@
+services:
+  django:
+    image: porto-ihab:0.0.1
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    environment:
+      - DEBUG=True
